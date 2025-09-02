@@ -1,0 +1,154 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Boulder', Charlesworth,; /* Custom fonts */
+}
+/* Body */
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+.logo span {
+  color: #ff9800;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://picsum.photos/1600/900?blur") no-repeat center center/cover;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+}
+.hero-text span {
+  color: #ff9800;
+}
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+.hero-text button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #ff9800;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero-text button:hover {
+  background: #e68a00;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ff9800;
+}
+
+/* Projects */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  transition: transform 0.4s, background 0.4s;
+}
+.project-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(255, 152, 0, 0.2);
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+form button {
+  padding: 12px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #e68a00;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  font-size: 0.9rem;
+}
