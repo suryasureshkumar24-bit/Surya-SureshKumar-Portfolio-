@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surya Sureshkumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <h1 class="logo">Surya<span>.</span></h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I’m <span>Surya Sureshkumar</span></h2>
+      <p>A Creative Web Developer & Designer</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Surya, a passionate web developer who loves mixing creativity and technology to build interactive and responsive designs. I enjoy making websites that look beautiful and work smoothly.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>✨ Portfolio Website</h3>
+        <p>A sleek personal portfolio with animations and smooth transitions.</p>
+      </div>
+      <div class="project-card">
+        <h3>🎮 JavaScript Game</h3>
+        <p>An interactive mini-game built with HTML, CSS & JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Landing Page</h3>
+        <p>A creative landing page design with modern UI elements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Surya Sureshkumar | Designed with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
